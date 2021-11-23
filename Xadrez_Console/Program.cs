@@ -1,5 +1,7 @@
 ﻿using System;
 using tabuleiro;
+using Xadrez_Console;
+
 namespace xadrez_console
 {
     class Program
@@ -7,6 +9,8 @@ namespace xadrez_console
         static void Main(string[] args)
         {
             Tabuleiro tab = new Tabuleiro(8, 8);
+
+            Tela.imprimirTabuleiro(tab);
 
             Console.ReadLine();
         }
