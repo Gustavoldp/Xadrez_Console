@@ -17,10 +17,15 @@ namespace tabuleiro
             this.qteMovimentos = 0;
         }
 
-        public void incrementarMovimentos()
+        public void incrementarQteMovimentos()
         {
             qteMovimentos++;
         }
+        public void decrementarQteMovimentos()
+        {
+            qteMovimentos--;
+        }
+
         public bool existeMovimentosPossiveis()
         {
             bool[,] mat = movimentospossiveis();
