@@ -98,7 +98,7 @@ namespace xadrez
 
         public void validarPosicaoDestino(Posicao origem, Posicao destino)
         {
-            if(!tab.peca(origem).podeMoverPara(destino))
+            if(!tab.peca(origem).movimentoPossivel(destino))
             {
                 throw new TabuleiroException("Posição de destino inválida!");
             }
@@ -226,7 +226,7 @@ namespace xadrez
         private void colocarPecas()
         {
             colocarNovaPeca('h', 7, new Torre(tab, Cor.Branca));
-            colocarNovaPeca('c', 3, new Torre(tab, Cor.Branca));
+            colocarNovaPeca('c', 1, new Torre(tab, Cor.Branca));
             colocarNovaPeca('d', 1, new Rei(tab, Cor.Branca));
 
             colocarNovaPeca('b', 8, new Torre(tab, Cor.Preta));
