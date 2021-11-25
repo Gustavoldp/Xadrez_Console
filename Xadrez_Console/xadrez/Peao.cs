@@ -22,7 +22,7 @@ namespace xadrez
         {
             return tab.peca(pos) == null;
         }
-        public override bool[,] movimentospossiveis()
+        public override bool[,] movimentosPossiveis()
         {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
 
